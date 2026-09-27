@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ДЗЗ в Казахстане</title>
+<style>
+    *{box-sizing:border-box}
+    body{
+        margin:0;
+        font-family:Arial,Helvetica,sans-serif;
+        background:linear-gradient(135deg,#071b2d,#0b3d5c);
+        color:#102a43;
+    }
+    .wrap{max-width:1050px;margin:auto;padding:28px 18px 45px}
+    .hero{
+        background:rgba(255,255,255,.96);
+        border-radius:24px;
+        padding:34px 30px;
+        box-shadow:0 18px 50px rgba(0,0,0,.25);
+        margin-bottom:20px;
+    }
+    .badge{
+        display:inline-block;padding:7px 12px;border-radius:999px;
+        background:#dff4ff;color:#075985;font-weight:700;font-size:13px
+    }
+    h1{font-size:38px;margin:15px 0 10px;color:#082f49}
+    .lead{font-size:18px;line-height:1.55;color:#486581;margin:0}
+    .stats{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+    .stat{background:#eef8fc;border-radius:16px;padding:14px 18px;min-width:170px}
+    .stat b{display:block;font-size:22px;color:#075985}
+    .stat span{font-size:13px;color:#627d98}
+    .section{
+        background:rgba(255,255,255,.97);
+        border-radius:22px;padding:26px 24px;margin-top:20px;
+        box-shadow:0 14px 40px rgba(0,0,0,.18)
+    }
+    h2{margin:0 0 18px;color:#082f49}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:15px}
+    .card{
+        border:1px solid #d9eaf2;border-radius:17px;padding:18px;
+        background:#fff;transition:.2s
+    }
+    .card:hover{transform:translateY(-3px);box-shadow:0 10px 25px rgba(7,89,133,.12)}
+    .card h3{margin:0 0 8px;color:#075985;font-size:18px}
+    .tag{display:inline-block;font-size:12px;background:#e8f5e9;color:#28743a;padding:5px 9px;border-radius:8px;margin-bottom:9px}
+    .card p{margin:0;line-height:1.45;color:#526b80;font-size:14px}
+    .search{
+        width:100%;padding:13px 15px;border:1px solid #cbdde7;border-radius:12px;
+        font-size:15px;margin-bottom:16px;outline:none
+    }
+    .search:focus{border-color:#0284c7;box-shadow:0 0 0 3px rgba(2,132,199,.1)}
+    .note{
+        background:#f0f9ff;border-left:5px solid #0284c7;padding:15px 17px;
+        border-radius:10px;line-height:1.5;color:#35566b
+    }
+    footer{text-align:center;color:#d6edf7;font-size:13px;padding-top:25px;line-height:1.5}
+    @media(max-width:600px){
+        h1{font-size:29px}.hero{padding:26px 20px}.section{padding:21px 17px}
+    }
+</style>
+</head>
+<body>
+<div class="wrap">
+    <header class="hero">
+        <span class="badge">9 класс • География / ДЗЗ</span>
+        <h1>Кто использует данные ДЗЗ в Казахстане?</h1>
+        <p class="lead">
+            Дистанционное зондирование Земли — получение информации о поверхности Земли
+            с помощью спутников и других средств наблюдения. В Казахстане такие данные
+            применяются для сельского хозяйства, экологии, землепользования, картографии,
+            мониторинга ЧС и других задач.
+        </p>
+        <div class="stats">
+            <div class="stat"><b>KazEOSat-1</b><span>высокое разрешение</span></div>
+            <div class="stat"><b>KazEOSat-2</b><span>среднее разрешение</span></div>
+            <div class="stat"><b>25+ компаний</b><span>в отраслевой ассоциации</span></div>
+        </div>
+    </header>
+
+    <section class="section">
+        <h2>Государственные организации</h2>
+        <div class="grid">
+            <article class="card">
+                <span class="tag">Национальный оператор</span>
+                <h3>АО «НК Қазақстан Ғарыш Сапары»</h3>
+                <p>Получает, обрабатывает и предоставляет данные ДЗЗ. Использует космические снимки для мониторинга территории и отраслевых задач.</p>
+            </article>
+            <article class="card">
+                <span class="tag">Государственный сектор</span>
+                <h3>Министерство сельского хозяйства РК</h3>
+                <p>Данные ДЗЗ используются для задач, связанных с сельским хозяйством и мониторингом земель.</p>
+            </article>
+            <article class="card">
+                <span class="tag">Экология</span>
+                <h3>Министерство экологии и природных ресурсов РК</h3>
+                <p>Космический мониторинг применяется для экологического и природоресурсного контроля.</p>
+            </article>
+            <article class="card">
+                <span class="tag">ЧС</span>
+                <h3>МЧС Республики Казахстан</h3>
+                <p>Данные ДЗЗ применяются для мониторинга чрезвычайных ситуаций и их последствий.</p>
+            </article>
+            <article class="card">
+                <span class="tag">Землепользование</span>
+                <h3>Государственные органы и организации</h3>
+                <p>ДЗЗ используется для контроля землепользования, картографии, геодезии и других отраслевых задач.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Компании и организации отрасли</h2>
+        <input class="search" id="search" placeholder="🔎 Найти компанию...">
+        <div class="grid" id="companies">
+            <article class="card"><h3>GEOID</h3><p>Геопространственные данные, геодезия и решения с применением ДЗЗ.</p></article>
+            <article class="card"><h3>GeoScan-Kazakhstan</h3><p>Работа с геодезическими, картографическими и геопространственными данными.</p></article>
+            <article class="card"><h3>EOSpatial</h3><p>Геопространственные решения и технологии дистанционного зондирования.</p></article>
+            <article class="card"><h3>1Sky</h3><p>Услуги и решения в сфере геодезии, картографии и ДЗЗ.</p></article>
+            <article class="card"><h3>GAMMER ENGINEERING</h3><p>Аэрофотосъёмка, топографическая съёмка и инженерные изыскания.</p></article>
+            <article class="card"><h3>Казахстанский Центр ГИС</h3><p>Геоинформационные системы и пространственные данные.</p></article>
+            <article class="card"><h3>КАЗГЕОСФЕРА</h3><p>Геодезические и геопространственные работы.</p></article>
+            <article class="card"><h3>GEOMATIX</h3><p>Геопространственные технологии и обработка данных.</p></article>
+            <article class="card"><h3>EGISTIC</h3><p>Цифровые решения для сельского хозяйства с использованием пространственных данных.</p></article>
+            <article class="card"><h3>GeoHub</h3><p>Геоинформационные и пространственные решения.</p></article>
+            <article class="card"><h3>НурГеоСервис</h3><p>Геодезические и геоинформационные услуги.</p></article>
+            <article class="card"><h3>Space Research Center</h3><p>Исследовательские и геопространственные направления, связанные с космическими данными.</p></article>
+            <article class="card"><h3>Geo-Алидада</h3><p>Геодезия, картография и работа с пространственными данными.</p></article>
+            <article class="card"><h3>Topoplan-3D</h3><p>3D-картографирование, геодезия и пространственные данные.</p></article>
+            <article class="card"><h3>KAZUAV</h3><p>Беспилотные технологии и получение геопространственных данных.</p></article>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Где применяются данные ДЗЗ?</h2>
+        <div class="grid">
+            <article class="card"><h3>🌾 Сельское хозяйство</h3><p>Мониторинг сельхозземель, посевов и состояния территорий.</p></article>
+            <article class="card"><h3>🌿 Экология</h3><p>Наблюдение за природными ресурсами и изменениями окружающей среды.</p></article>
+            <article class="card"><h3>🗺️ Карты и геодезия</h3><p>Создание и обновление карт, измерение и анализ территории.</p></article>
+            <article class="card"><h3>🚨 ЧС</h3><p>Наблюдение за последствиями чрезвычайных ситуаций и изменениями территории.</p></article>
+            <article class="card"><h3>⛏️ Недропользование</h3><p>Анализ территорий и природных ресурсов.</p></article>
+            <article class="card"><h3>🏙️ Землепользование</h3><p>Контроль и анализ использования земельных участков.</p></article>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Источники</h2>
+        <div class="note">
+            Информация основана на материалах Аэрокосмического комитета РК,
+            АО «НК Қазақстан Ғарыш Сапары» и Ассоциации компаний в области ДЗЗ.
+            Список компаний отражает участников отрасли и поставщиков/исполнителей
+            услуг ДЗЗ, а не утверждение, что каждая компания использует спутниковые
+            снимки в каждом своём проекте.
+        </div>
+    </section>
+
+    <footer>
+        Учебный мини-сайт • Дистанционное зондирование Земли в Казахстане<br>
+        Сделано в HTML + CSS + JavaScript
+    </footer>
+</div>
+
+<script>
+const input=document.getElementById('search');
+const cards=[...document.querySelectorAll('#companies .card')];
+input.addEventListener('input',()=>{
+    const q=input.value.toLowerCase().trim();
+    cards.forEach(card=>{
+        card.style.display=card.textContent.toLowerCase().includes(q)?'block':'none';
+    });
+});
+</script>
+</body>
+</html>
